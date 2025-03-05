@@ -1,0 +1,104 @@
+{
+  "books": [
+    {
+      "title": "This is Edited Bookdsa",
+      "author": "John Doe",
+      "category": "Fictionpp",
+      "ISBN": "9780345816023",
+      "createdAt": "1 January 2023, 9:00AM",
+      "editedAt": "5 March 2025 08:19 PM",
+      "activated": true,
+      "id": "3d35"
+    },
+    {
+      "title": "Mastering JavaScript",
+      "author": "Jane Smith",
+      "category": "Technology",
+      "ISBN": "9780134382332",
+      "createdAt": "15 February 2023, 10:15AM",
+      "editedAt": "5 March 2025 08:19 PM",
+      "activated": true,
+      "id": "48e4"
+    },
+    {
+      "title": "The Silent Observer",
+      "author": "Michael Johnson",
+      "category": "Mystery",
+      "ISBN": "9780399562636",
+      "createdAt": "10 March 2023, 2:00PM",
+      "editedAt": "5 March 2025 08:19 PM",
+      "activated": true,
+      "id": "2e90"
+    },
+    {
+      "title": "A Journey to the Stars",
+      "author": "Sarah Williams",
+      "category": "Science Fiction",
+      "ISBN": "9780062871494",
+      "createdAt": "5 April 2023, 11:30AM",
+      "editedAt": "5 March 2025 02:13 AM",
+      "activated": false,
+      "id": "a65f"
+    },
+    {
+      "title": "Mindful Living",
+      "author": "Rachel Green",
+      "category": "Self-Help",
+      "ISBN": "9780143128973",
+      "createdAt": "15 May 2023, 1:15PM",
+      "editedAt": "5 March 2025 08:17 PM",
+      "activated": false,
+      "id": "894c"
+    },
+    {
+      "title": "Exploring Ancient Civilizations",
+      "author": "Chris Roberts",
+      "category": "History",
+      "ISBN": "9781594206982",
+      "createdAt": "25 May 2023, 7:30AM",
+      "editedAt": "5 March 2025 01:17 AM",
+      "activated": true,
+      "id": "6ed1"
+    },
+    {
+      "title": "The Future of Technology",
+      "author": "Andrew Mitchell",
+      "category": "Science & Technology",
+      "ISBN": "9781119024345",
+      "createdAt": "3 June 2023, 12:00PM",
+      "editedAt": "5 March 2025 01:17 AM",
+      "activated": true,
+      "id": "c00d"
+    },
+    {
+      "title": "A Dance with Fate",
+      "author": "Sophia Adams",
+      "category": "Romance",
+      "ISBN": "9781439150139",
+      "createdAt": "12 June 2023, 10:30AM",
+      "editedAt": "5 March 2025 08:19 PM",
+      "activated": false,
+      "id": "2b58"
+    },
+    {
+      "id": "b96e",
+      "title": "asdasdasd",
+      "author": "asdasd",
+      "category": "defasd",
+      "ISBN": "12312355312",
+      "createdAt": "4 March 2025 11:59 PM",
+      "editedAt": "4 March 2025 11:59 PM",
+      "activated": false
+    },
+    {
+      "id": "fd88",
+      "title": "frmnow",
+      "author": "fjsdofnosd",
+      "category": "frnejo",
+      "ISBN": "4521838123",
+      "createdAt": "5 March 2025 12:53 AM",
+      "editedAt": "5 March 2025 08:19 PM",
+      "activated": true
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+.book-table {
+    background-color: #172132;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.book-table td, .book-table th {
+    border: 1px solid #D3D3D3;
+    padding: 4px 3px;
+}
+
+.book-table tbody td {
+    position: relative;
+
+    font-size: .95rem;
+    background-color: #172132;
+
+    transition: .25s ease;
+
+    padding: .5rem;
+
+    cursor: pointer;
+}
+
+.book-table tbody td::before {
+    content: "Click to copy";
+    font-size: .925rem;
+
+    position: absolute;
+    top: -45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: max-content;
+
+    background-color: #2a3439f6;
+    border-radius: .375rem;
+
+    padding: .25rem .5rem;
+    color: #FFFFFF;
+
+    opacity: 0;
+    pointer-events: none;
+
+    z-index: 99;
+
+    transition: .2s ease;
+}
+
+.book-table tbody td:nth-child(7) button {
+    padding: .3rem .25rem;
+    border-radius: .325rem;
+
+    width: 110px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: .25rem;
+
+    color: white;
+
+    transition: .25s ease;
+}
+
+.book-table tbody td:nth-child(7) button + div {
+    right: 65%;
+}
+
+.book-table tbody td:nth-child(7) button:focus + div {
+    opacity: 1;
+    visibility: visible;
+}
+
+.book-table tbody td:nth-child(7) div button {
+    border: 1px solid #fff;
+}
+
+.book-table tbody td:nth-child(7),
+.book-table tbody td:nth-child(6),
+.book-table tbody td:nth-child(5) {
+    cursor: default;
+}
+
+.book-table tbody td:nth-child(7):hover,
+.book-table tbody td:nth-child(6):hover,
+.book-table tbody td:nth-child(5):hover {
+    background-color: #172132;
+}
+
+.book-table tbody td:nth-child(7)::before,
+.book-table tbody td:nth-child(6)::before,
+.book-table tbody td:nth-child(5)::before {
+    content: none;
+}
+
+.book-table tbody td:hover {
+    background-color: #436399;
+}
+
+.book-table tbody td:hover::before {
+    opacity: 1;
+}
+  
+.book-table thead {
+    background: #2980b9;
+}
+
+.book-table thead th {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-left: 1px solid #D3D3D3;
+}
+
+.book-table thead th:first-child {
+    border-left: none;
+}
+
+@media screen and (max-width: 1350px) {
+    .book-table tbody td:nth-child(7) {
+        padding-block: 1rem;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .book-table tbody td:nth-child(7) {
+        font-size: .925rem;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .book-table, 
+    .book-table tbody, 
+    .book-table tr, 
+    .book-table td { 
+        display: block; 
+        width: 100%; 
+    }
+    
+    .book-table thead { 
+        display: none; 
+    }
+
+    .book-table td { 
+        text-align: center;
+        position: relative; 
+
+        padding-block: .75rem;
+
+        border-bottom: 1px solid #ddd; 
+    }
+    
+    .book-table td:last-child { 
+        border-bottom: 0; 
+    }
+    
+    .book-table td:nth-child(7) { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 0.5rem; 
+        padding-left: 0; 
+        text-align: center; 
+    }
+
+    .book-table tbody td:nth-child(7) button + div {
+        right: 24%;
+    }
+}
+
+@media screen and (min-width: 841px) {
+    .book-table { 
+        table-layout: fixed; 
+    }
+    .book-table th:nth-child(1) { width: 20%; }
+    .book-table th:nth-child(2) { width: 15%; }
+    .book-table th:nth-child(3) { width: 15%; }
+    .book-table th:nth-child(4) { width: 13%; }
+    .book-table th:nth-child(5), 
+    .book-table th:nth-child(6) { width: 15%; }
+    .book-table th:nth-child(7) { width: 12%; }
+}

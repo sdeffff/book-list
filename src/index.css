@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  src: url(./assets/font/Montserrat-SemiBold.ttf) format('woff');
+}
+
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  src: url(./assets/font/Montserrat-Medium.ttf) format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  src: url(./assets/font/Montserrat-Regular.ttf) format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  src: url(./assets/font/Montserrat-Light.ttf) format('woff');
+}
+
+:root {
+  --white: #E0E0E0;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Montserrat';
+  color: var(--white);
+}
+
+img[data-type="icon"] {
+  max-width: 1.6rem;
+}
+
+body {
+  background-color: #2c3e50;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, input {
+  outline: none;
+  border: none;
+}

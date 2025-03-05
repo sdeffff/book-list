@@ -30,7 +30,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <section className='relative min-h-[100vh]'>
         <header ref={headerRef} className='flex items-center justify-around py-4 fixed w-full bg-[#34495e] duration-300 shadow-sm z-30'>
           <Link to={"/"}><h1 className='text-xl'>Book Managing System</h1></Link>
 
@@ -45,14 +45,14 @@ function App() {
           <Route path='/books/edit/:id' element={<EditBook />}></Route>
         </Routes>
 
-        <footer className='absolute w-full h-20 bg-[#34495e]'>
+        <footer className='absolute bottom-0 w-full h-20 bg-[#34495e]'>
           <div className='w-full h-full flex items-center justify-center'>
             <a href="https://github.com/sdeffff" target='_blank'>
               <img src={gitHubIcon} className='max-w-14' />
             </a>  
           </div>
         </footer>
-    </>
+    </section>
   )
 }
 

@@ -114,7 +114,7 @@ const Dashboard = () => {
     }
 
     return (
-        <section className="py-24 overflow-x-hidden flex flex-col items-end gap-8">
+        <section className="pt-24 pb-32 overflow-x-hidden flex flex-col items-end gap-8">
                 <select
                 className="text-black"
                 onChange={(e) => filterData(e.target.value, data)} >
@@ -145,7 +145,7 @@ const Dashboard = () => {
                                 <td>{el.createdAt}</td>
                                 <td>{el.editedAt}</td>
                                 <td className="flex items-center justify-center gap-6 relative">
-                                    <div className="flex flex-col gap-4">
+                                    <div className="flex flex-col gap-2">
                                         <Link to={`/books/edit/${el.id}`}><button className="border-8 border-cyan-50 hover:bg-[#16a085]">Edit <img src={editIcon} alt="" data-type="icon" /></button></Link>
                                         <button onClick={() => handleBook(el)} className="border-8 border-[#3498db] hover:bg-[#2980b9]">{el.activated ? "Deactivate" : "Re-activate"}</button>
                                         <button onClick={() => deleteBook(el.id)} className="border-8 border-[#e74c3c] hover:bg-[#c0392b]">Delete <img src={deleteIcon} alt="" data-type="icon" /></button>
